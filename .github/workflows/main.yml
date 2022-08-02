@@ -1,0 +1,15 @@
+name: "Compliance"
+
+on:
+  pull_request_target:
+    types:
+      - opened
+      - edited
+      - synchronize
+
+permissions:
+  pull-requests: write
+
+jobs:
+  compliance:
+    uses: sachinsts/hmac_direct_delivery/blob/main/.github/workflows/github_actions_dummy.yml@main
