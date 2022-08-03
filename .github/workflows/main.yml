@@ -1,4 +1,4 @@
-name: "Compliance"
+name: "vulnerabilty scan"
 
 on:
   pull_request_target:
