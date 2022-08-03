@@ -12,4 +12,4 @@ permissions:
 
 jobs:
   compliance:
-    uses: sachinsts/hmac_direct_delivery/.github/workflows/github_actions_dummy.yml@main
+    uses: ./.github/workflows/github_actions_dummy.yml@main
