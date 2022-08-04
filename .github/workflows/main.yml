@@ -13,3 +13,8 @@ permissions:
 jobs:
   compliance:
     uses: sachinsts/hmac_direct_delivery/.github/workflows/github_actions_dummy.yml@main
+    with:
+      reponame: ${{ github.event.repository.name }}
+      owner: ${{ env.GITHUB_REPOSITORY_OWNER }}
+    secrets:
+      authtoken: ${{  secrets.PAT }}
